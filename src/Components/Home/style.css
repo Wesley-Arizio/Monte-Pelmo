@@ -28,7 +28,7 @@
     width: 100%;
     padding: 10px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto ;
     grid-gap: 10px;
 }
 .prhase{
@@ -144,7 +144,7 @@
 }
 
 .container-info{
-    height: 2000px;
+    height: auto;
     margin-top: 500px;
     padding: 10px 0 0 0;
 }
@@ -178,26 +178,71 @@
     padding:50px;
     font-size: 25px;
     line-height: 1.5;
-    color: black;
+    color: white;
     font-family: 'Roboto';
     background:  rgb(120, 211, 195);
 }
 
+.container-gallery{
+    width: 100%;
+    margin-top: 150px;
+}
+.container-gallery .title-gallery{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.gallery{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.container-image{
+    width: 100%;
+    height: auto;
+    -webkit-animation: scaleDown .4s ease;
+    animation: scaleDown .4s linear;
+    transform-origin: 50% 50%;
+}
 
+.container-image img{
+    width: 100%;
+    height: 100%;
+}
+.container-image:hover{
+    z-index: 100;
+    -webkit-animation: scale 0.4s ease;
+    animation: scale 0.4s linear;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* animations */
+@keyframes scaleDown{
+    0%{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100%{
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+@keyframes scale{
+    0%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100%{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
 
 
 
@@ -215,11 +260,18 @@
         height: 170px;
         font-size: 35px;
     } 
+    .prhases-list{
+        grid-template-columns: auto  auto;
+
+    }
     .container-card-flavors{
         grid-template-columns: auto auto auto;
     }
     .container-title__about{
         width: 50%;
+    }
+    .gallery{
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -237,5 +289,8 @@
     }
     .container-title__about{
         width: 30%;
+    }
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 } 
