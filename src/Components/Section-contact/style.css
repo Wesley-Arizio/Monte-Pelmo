@@ -1,0 +1,120 @@
+.container-contact{
+    width: 100%;
+    margin-top: 50px;
+    padding: 7px 50px;
+}
+.contact-title{
+    width: 100%;
+    text-align: center;
+    padding: 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+.form-contact{
+    width: 100%;
+}
+.container-input {
+    width: 100%;
+}
+.container-input, .container-button{
+    width: 100%;
+    margin: 5px auto;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.container-input input{
+    height: 70px;
+}
+.input-submit{
+    width: 50%;
+    border: 2px solid rgb(120, 211, 195);
+    height: 60px;
+    border-radius: 20px;
+}
+
+.container-input input, textarea{
+    width: 100%;
+    padding: 12px 15px;
+    text-align: start;
+    border: none;
+    border:2px solid  rgb(120, 211, 195);
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.container-input textarea{
+    resize: none;
+}
+
+.container-button button{
+    width: 100%;
+    background: transparent;
+}
+
+.container-button button:hover{
+    background:rgb(120, 211, 195);
+    color: white ;
+}
+.container-media{
+    width: 100%;
+    margin-top: 20px;
+    align-self: center;
+}
+.container-media .description h4 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+.container-social-media{
+    width: 100%;
+}   
+.ul-social-media{
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Montserrat';
+}
+.ul-social-media li{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ul-social-media li .icon-fb, .icon-insta{
+    margin: 5px;
+}   
+.icon-fb{
+    color: #3b5998; 
+}
+.fb-link{
+    margin-left: 5px;
+}
+.icon-insta{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: white; 
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.span-social-media a{
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media(min-width: 768px){
+    .container-input input, textarea{
+        width: 70%;
+    }
+    .container-button button{
+        width: 70%;
+    }
+}
+
+@media(min-width:1280px){
+    .container-input input, textarea{
+        width: 30%;
+    }
+    .container-button button{
+        width: 30%;
+    }
+} 

@@ -1,0 +1,53 @@
+.container-footer{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    background: #f1f1f1;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    font-family: 'Montserrat';
+}
+.container-company{
+    width: 100%;
+    height: 200px;
+    padding: 15px 5px;
+
+}
+.adress{
+    margin: 5px; 
+} 
+.media{
+    margin: 15px;
+}
+ .media ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.media ul li .icon-fb, .icon-insta{
+    margin:5px;
+}
+.icon-developer{
+    margin: 10px;
+}
+.container-developer{
+    background-color: rgb(73, 73, 73);
+    color: white;
+    width: 100%;
+    height: 200px;
+    padding: 15px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width: 768px){
+    .container-footer{
+        grid-template-columns: 65% 35%;
+    }
+}
+
+@media(min-width:1280px){
+
+} 
